@@ -37,7 +37,7 @@ function keepformON(event){
 
 let buttonSend = document.getElementById("button-send");
 
-buttonSend.addEventListener("click",submitForm())
+buttonSend.addEventListener("click",submitForm)
 
 
 // Fetch data from an API endpoint on your Azure App Service
