@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#txtSlide{
+
+    animation: slideIn 1s ease-out;
+
+}
+
+main{
+
+
+    gap: 35px;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#txtSlideLeft{
+
+    animation: slideInLeft 1s ease-out;
+
+}
+
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#txtSlideBottom{
+
+    animation: slideInBottom 1s ease-out;
+
+}
+
+
+#form{
+    position: fixed;
+    display: flex;
+    visibility: hidden;
+    z-index: 2;
+    background-color: rgba(211, 211, 211, 0.2);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+
+
+
+
+
+
+}
+
+#form-not-click{
+
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    
+
+}
+#email{
+    border-radius: 10px;
+    border-color: blue;
+    width: 100%;
+
+
+}
+#button-send{
+
+    width: 65%;
+
+
+}
+
+
+#send-button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+
+}
+
+#send-button-in{
+
+    font-size: 20px;
+    height: 10em;
+    width: 20em;
+
+
+
+}
+#send-button-in p{
+
+    font-size: 40px;
+    
+
+
+
+}

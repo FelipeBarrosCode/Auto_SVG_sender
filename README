@@ -1,0 +1,9 @@
+Hi this a project that I am creating using the cloud provider azure 
+
+The prject is still under development but in a general way is a SVG sender that sends ZIP packages to users emails with different SVG images to different users during the period of 1 week.
+
+This is only the front-end page of the project and I am implementing the backend
+
+The front end was built using HTML, CSS(mainly bootstrap) and JS vanilla
+
+No I am not planning sharing details about API or anything of the kind that could put the email of users in risk
