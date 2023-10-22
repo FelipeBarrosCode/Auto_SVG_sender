@@ -37,6 +37,7 @@ function keepformON(event){
 
 // Fetch data from an API endpoint on your Azure App Service
 function submitForm() {
+    prompt("working function")
     const email = document.getElementById('email').value;
   
     // Create a JavaScript object with the form data
@@ -45,7 +46,7 @@ function submitForm() {
     };
     console.log(formData.email)
     // Send the data to the server (server-side script)
-    fetch('serverscript.azurewebsites.net', {
+    fetch('svgsender.azurewebsites.net', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
