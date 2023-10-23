@@ -43,7 +43,7 @@ buttonSend.addEventListener("click",submitForm)
 // Fetch data from an API endpoint on your Azure App Service
 async function submitForm() {
   const { text } = await( await fetch(`/api/message`)).json();
-  document.querySelector('#name').textContent = text;
+  document.getElementById('email').textContent = text;
 }
   
 
