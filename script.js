@@ -50,7 +50,7 @@ function submitForm() {
     const email = document.getElementById('email').value;
   
     // Create a JavaScript object with the form data
-    console.log(JSON.stringify(formData))
+   
     console.log(formData.email)
     // Send the data to the server (server-side script)
     fetch('https://svgsender.azurewebsites.net', {
