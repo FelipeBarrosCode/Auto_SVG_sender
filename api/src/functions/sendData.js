@@ -1,8 +1,8 @@
 const { app } = require('@azure/functions');
 
-app.http('sendData', {
+app.http('', {
     methods: ['POST'],
-    authLevel: 'anonymous',
+    authLevel: 'max',
     handler: async (request, context) => {
         context.log(`Http function processed request for url "${request.url}"`);
 
