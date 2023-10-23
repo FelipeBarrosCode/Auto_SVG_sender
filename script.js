@@ -53,7 +53,7 @@ function submitForm() {
    
     console.log(formData.email)
     // Send the data to the server (server-side script)
-    fetch('https://svgsender.azurewebsites.net', {
+    fetch('http://echoapi.cloudapp.net/api', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
