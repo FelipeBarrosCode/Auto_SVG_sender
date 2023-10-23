@@ -39,10 +39,6 @@ let buttonSend = document.getElementById("button-send");
 
 buttonSend.addEventListener("click",submitForm)
 
-const formData = {
-  email: email
-};
-
 
 // Fetch data from an API endpoint on your Azure App Service
 function submitForm() {
@@ -50,10 +46,12 @@ function submitForm() {
     const email = document.getElementById('email').value;
   
     // Create a JavaScript object with the form data
-   
+    const formData = {
+      email: email
+    };
     console.log(formData.email)
     // Send the data to the server (server-side script)
-    fetch('http://echoapi.cloudapp.net/api', {
+    fetch('svgsender.azurewebsites.net', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
