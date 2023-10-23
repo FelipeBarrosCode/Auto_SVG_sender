@@ -42,16 +42,18 @@ buttonSend.addEventListener("click",submitForm)
 const formData = {
   email: email
 };
+
+
 // Fetch data from an API endpoint on your Azure App Service
 function submitForm() {
     prompt("working function")
     const email = document.getElementById('email').value;
   
     // Create a JavaScript object with the form data
-    
+    console.log(JSON.stringify(formData))
     console.log(formData.email)
     // Send the data to the server (server-side script)
-    fetch('svgsender.azurewebsites.net', {
+    fetch('https://svgsender.azurewebsites.net', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
