@@ -1,3 +1,4 @@
+import { createClient } from '@supabase/supabase-js'
 
 let holdValuec = document.getElementById("send-button");
 
@@ -31,6 +32,12 @@ function keepformON(event){
 
 }
 
+// Initialize the JS client
+
+
+
+// Make a request
+
 
 
 //Backend integration now
@@ -40,10 +47,14 @@ let buttonSend = document.getElementById("button-send");
 buttonSend.addEventListener("click",submitForm)
 
 
+
 // Fetch data from an API endpoint on your Azure App Service
 async function submitForm() {
-  const { text } = await( await fetch(`/api/message`)).json();
-  document.getElementById('email').textContent = text;
+    let emailValue = document.getElementById("email").value
+    
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+    
+    const { data , error } = await supabase.from('Store_email').update({email:emailValue, packet: 1})
 }
   
 
