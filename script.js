@@ -1,4 +1,3 @@
-import { createClient } from '@supabase/supabase-js'
 
 let holdValuec = document.getElementById("send-button");
 
@@ -32,15 +31,11 @@ function keepformON(event){
 
 }
 
-// Initialize the JS client
-
-
-
-// Make a request
-
 
 
 //Backend integration now
+
+;
 
 let buttonSend = document.getElementById("button-send");
 
