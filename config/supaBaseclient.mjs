@@ -6,9 +6,9 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 
   
 
-let eventSend = document.getElementById("form-not-click");
+let eventSend = document.getElementById("button-send");
 
-eventSend.addEventListener("submit",sendData)
+eventSend.addEventListener("click",sendData)
 
 
 
