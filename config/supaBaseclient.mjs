@@ -14,7 +14,8 @@ eventSend.addEventListener("submit",sendData)
 
 async function sendData(){
     //let emailg = document.getElementById("email"); 
-    const { data, error } = await supabase
+  prompt("WORKING")
+  const { data, error } = await supabase
   .from('Store_email')
   .insert([
     { "Email": "TENTAR", "Packet": 0 },
