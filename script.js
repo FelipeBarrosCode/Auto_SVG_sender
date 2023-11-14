@@ -1,4 +1,8 @@
 
+
+
+let subpage = document.getElementById("form")
+
 let holdValuec = document.getElementById("send-button");
 
 holdValuec.addEventListener("click",createPage);
@@ -12,8 +16,8 @@ function createPage(){
 
 }
 
-let subpage = document.getElementById("form")
-let subpageInform = document.getElementById("Special")
+
+
 
 
 
@@ -33,25 +37,8 @@ function keepformON(event){
 
 
 
-//Backend integration now
-
-;
-
-let buttonSend = document.getElementById("button-send");
-
-buttonSend.addEventListener("click",submitForm)
 
 
-
-// Fetch data from an API endpoint on your Azure App Service
-async function submitForm() {
-    let emailValue = document.getElementById("email").value
-    
-    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
-    
-    const { data , error } = await supabase.from('Store_email').update({email:emailValue, packet: 1})
-}
-  
 
 
   
