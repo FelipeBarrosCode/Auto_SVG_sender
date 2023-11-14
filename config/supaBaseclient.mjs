@@ -13,14 +13,16 @@ eventSend.addEventListener("click",sendData)
 
 
 async function sendData(){
-    //let emailg = document.getElementById("email"); 
-  prompt("WORKING")
-  const { data, error } = await supabase
-  .from('Store_email')
-  .insert([
-    { "Email": "TENTAR", "Packet": 0 },
-  ])
-  .select()
+    let emailg = document.getElementById("email"); 
+  
+    prompt("WORKING")
+    console.log("USE WORk " + emailg)
+    const { data, error } = await supabase
+    .from('Store_email')
+    .insert([
+      { "Email": "TENTAR", "Packet": 0 },
+    ])
+    .select()
 
 }
 
