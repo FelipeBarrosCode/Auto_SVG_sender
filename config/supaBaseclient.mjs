@@ -23,6 +23,8 @@ async function sendData(){
       { "Email": "TENTAR", "Packet": 0 },
     ])
     .select()
+    console.log(error)
+    console.log(data)
 
 }
 
