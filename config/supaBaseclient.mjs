@@ -17,7 +17,7 @@ async function sendData(){
     const { data, error } = await supabase
   .from('Store_email')
   .insert([
-    { "Email": emailg.innerText, "Packet": 0 },
+    { "Email": "TENTAR", "Packet": 0 },
   ])
   .select()
 
