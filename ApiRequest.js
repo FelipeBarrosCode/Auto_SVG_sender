@@ -21,7 +21,7 @@ form.addEventListener('submit', async function(e){
 
     const variable = payload.get("user-email");
 
-    fetch('https://api-autosvg.onrender.com ',{
+    fetch('https://api-autosvg.onrender.com',{
         method:"POST",
         mode: "cors",
         headers: {
