@@ -32,8 +32,13 @@ form.addEventListener('submit', async function(e){
             "name" : variable})
         
         
-    }).then((response) => console.log('Response Data:', response.status))
-    .then(data => console.log(data))
+    }).then((response) => {if(response.status == 201){
+
+        alert(":) congratulations you registered your email")
+
+    }else{
+        alert(":( Pleaser enter a valid email")
+    }}).then(data => console.log(data))
     .catch(error => alert("Something is going wrong please try again alter"));
    
 
