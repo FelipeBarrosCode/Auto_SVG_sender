@@ -32,7 +32,7 @@ form.addEventListener('submit', async function(e){
             "name" : variable})
         
         
-    }).then((response) => console.log('Response Data:', response.data))
+    }).then((response) => console.log('Response Data:', response.status))
     .then(data => console.log(data))
     .catch(error => alert("Something is going wrong please try again alter"));
    
