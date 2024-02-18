@@ -53,11 +53,34 @@ main{
     }
 }
 
+@keyframes topSlideResult {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 #txtSlideBottom{
 
     animation: slideInBottom 1s ease-out;
 
 }
+
+#resultPositiveOuter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+
+
 
 
 #form{

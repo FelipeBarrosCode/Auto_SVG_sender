@@ -4,9 +4,16 @@
 
 const formin = document.getElementById('form-not-click')
 
+
+
+
 form.addEventListener('submit', async function(e){
     e.preventDefault()
 
+
+    
+    
+    
     const payload = new FormData(formin)
 
     
@@ -25,10 +32,15 @@ form.addEventListener('submit', async function(e){
             "name" : variable})
         
         
-    }).then(response => response.json().then(json => alert(JSON.stringify(json))))
-    .then(data => console.log(data))
-    .catch(error => console.log('Error:', error.message));
+    }).then((response) => {if(response.status == 200){
 
+        alert(":) congratulations you registered your email")
+
+    }else{
+        alert(":( Pleaser enter a valid email")
+    }}).then(data => console.log(data))
+    .catch(error => alert("Something is going wrong please try again alter"));
+   
 
 })
 
