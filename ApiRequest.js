@@ -32,7 +32,7 @@ form.addEventListener('submit', async function(e){
             "name" : variable})
         
         
-    }).then((response) => {if(response.status == 200){
+    }).then((response) => {if(response.status() == 200){
 
         alert(":) congratulations you registered your email")
 
